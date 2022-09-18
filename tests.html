@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel = "stylesheet" href = "node_modules/mocha/mocha.css">
+    </head>
+    <body>
+        <div id = "mocha">
+            <p>
+                <a href = ".">Index</a>
+            </p>
+        </div>
+        <div id = "message">
+        </div>
+        <div id = "fixtures">
+        </div>
+        <!-- //Enter the following scripts in this order: -->
+        <script src = "node_modules/mocha/mocha.js"></script> 
+        <script src = "node_modules/chai/chai.js"></script>
+        <!--//Then the script linking the main file that is going to be tested:-->
+        <script src = "WarGame.js"></script>
+        <script>mocha.setup("bdd")</script>
+        <!--//Then, after the mocha setup, the script file with the actual test script:-->
+        <script src = "WarGameTesting.js"></script>
+        <!--//And, finally, the script to run mocha-->
+        <script>mocha.run();</script>
+    </body>
+</html>
